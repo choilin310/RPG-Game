@@ -25,3 +25,21 @@ body {
     color: #ffffff;
     padding: 10px;
 }
+
+#controls, #stats {
+    border: 1px solid #0a0a23;
+    color: #0a0a23;
+    padding: 5px;
+}
+
+#monsterStats {
+    border: 1px solid #0a0a23;
+    color: #ffffff;
+    background: #c70d0d;
+    padding: 5px;
+    display: none;
+}
+
+.stat {
+    padding-right: 10px;
+}
