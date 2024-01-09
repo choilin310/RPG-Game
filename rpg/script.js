@@ -16,6 +16,7 @@ const goldText = document.querySelector("#goldText");
 const monsterStats = document.querySelector("#monsterStats");
 const monsterName = document.querySelector("#monsterName");
 const monsterHealthText = document.querySelector("#monsterHealth");
+
 const weapons = [
   { name: 'stick', power: 5 },
   { name: 'dagger', power: 30 },
@@ -128,6 +129,23 @@ function sellWeapon() {
   }
 }
 
-function fightSlime() {}
+function fightSlime() {
+  fighting = 0;
+  goFight();
+}
 
-function fightBeast() {}
+function fightBeast() {
+  fighting = 1;
+  goFight();
+}
+
+function fightDragon() {
+  fighting = 2;
+  goFight();
+}
+
+function attack() {
+
+}
+
+function dodge(){}
