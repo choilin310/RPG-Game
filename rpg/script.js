@@ -195,7 +195,7 @@ function attack() {
     monsterHealth -=
       weapons[currentWeapon].power + Math.floor(Math.random() * xp) + 1;
   } else {
-    text.innerText += " You miss."
+    text.innerText += " You miss.";
   }
   healthText.innerText = health;
   monsterHealthText.innerText = monsterHealth;
@@ -208,6 +208,9 @@ function attack() {
     } else {
       defeatMonster();
     }
+    if (Math.random() <= 0.1) {
+      text.innerText += " Your " + inventory.pop() + " breaks.";
+    }
   }
 }
 
@@ -218,7 +221,8 @@ function getMonsterAttackValue(level) {
 }
 
 function isMonsterHit() {
-  return Math.random() > .2;
+  return Math.random() > 0.2;
+  return Math.random() > 0.2 || health < 20;
 }
 
 function dodge() {
