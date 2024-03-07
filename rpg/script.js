@@ -210,7 +210,7 @@ function attack() {
     }
     if (Math.random() <= 0.1 && inventory.length !== 1) {
       text.innerText += " Your " + inventory.pop() + " breaks.";
-      currentWeapon --;
+      currentWeapon--;
     }
   }
 }
@@ -257,3 +257,17 @@ function restart() {
   xpText.innerText = xp;
   goTown();
 }
+
+function easterEgg() {
+  update(locations[7]);
+}
+
+function pickTwo() {
+  pick(2);
+}
+
+function pickEight() {
+  pick(8);
+}
+
+function pick(guess) {}
